@@ -1,0 +1,1490 @@
+
+> expression-calculator@1.0.0 test C:\Users\sergei\Desktop\epam\expression-calculator
+> mocha test.js
+
+
+
+  Easy
+fuck 0 2 2 +
+    √ Test simple addition
+fuck 0 2 2 -
+    √ Test simple subtraction
+fuck 0 2 3 *
+    √ Test simple multiplication
+fuck 0 1 2 /
+    √ Test simple division
+fuck 0 1 0 /
+    1) Test division by zero
+fuck 2 3 6 *
+fuck 1 8 18 /
+fuck 0 5 0 *
+    2) Mixed base test 1
+fuck 3 1 5 +
+fuck 2 0 6 *
+fuck 1 1 0 /
+fuck 0 3 NaN +
+    3) Mixed base test 2
+fuck 3 2 3 *
+fuck 2 2 6 *
+fuck 1 9 12 *
+fuck 0 6 108 +
+    4) Mixed base test 3
+fuck 3 6 6 /
+fuck 2 4 1 +
+fuck 1 5 5 -
+fuck 0 2 0 +
+    5) Mixed base test 4
+fuck 2 9 3 -
+fuck 1 7 6 -
+fuck 0 7 1 +
+    6) Mixed base test 5
+fuck 2 5 7 *
+fuck 1 5 35 +
+fuck 0 5 40 -
+    7) Mixed base test 6
+fuck 2 5 0 +
+fuck 1 0 5 /
+fuck 0 3 0 *
+    8) Mixed base test 7
+fuck 2 4 8 -
+fuck 1 4 -4 +
+fuck 0 8 0 -
+    9) Mixed base test 8
+fuck 3 1 7 +
+fuck 2 3 8 /
+fuck 1 5 0 /
+fuck 0 7 NaN *
+    10) Mixed base test 9
+fuck 2 5 7 +
+fuck 1 6 12 -
+fuck 0 4 -6 -
+    11) Mixed base test 10
+fuck 2 8 5 -
+fuck 1 7 3 /
+fuck 0 5 2 +
+    12) Mixed base test 11
+fuck 2 5 0 -
+fuck 1 5 5 *
+fuck 0 5 25 *
+    13) Mixed base test 12
+fuck 3 8 4 -
+fuck 2 4 4 +
+fuck 1 3 8 -
+fuck 0 8 -5 *
+    14) Mixed base test 13
+fuck 3 3 5 /
+fuck 2 4 0 -
+fuck 1 6 4 -
+fuck 0 2 2 /
+    15) Mixed base test 14
+fuck 2 4 5 +
+fuck 1 0 9 +
+fuck 0 0 9 /
+    16) Mixed base test 15
+
+  Medium
+fuck 0 2 3 *
+    17) Brackets must be paired
+fuck 2 2 3 *
+fuck 1 1 6 (
+fuck 0 NaN NaN (
+    18) Brackets must be paired
+fuck 3 2 3 *
+fuck 2 1 6 +
+fuck 1 NaN 7 (
+fuck 0 NaN NaN (
+    19) Brackets must be paired
+fuck 5 2 7 *
+fuck 4 2 14 +
+fuck 3 3 16 (
+fuck 2 4 NaN -
+fuck 1 8 NaN *
+fuck 0 8 NaN -
+    20) Brackets test 1
+fuck 6 4 9 *
+fuck 5 4 36 -
+fuck 4 1 -32 *
+fuck 3 9 -32 (
+fuck 2 8 NaN *
+fuck 1 3 NaN /
+fuck 0 6 NaN +
+    21) Brackets test 2
+fuck 7 9 2 *
+fuck 6 4 18 /
+fuck 5 9 0 *
+fuck 4 2 0 /
+fuck 3 8 NaN (
+fuck 2 7 NaN +
+fuck 1 9 NaN /
+fuck 0 8 NaN -
+    22) Brackets test 3
+fuck 5 5 7 +
+fuck 4 3 12 /
+fuck 3 4 0 +
+fuck 2 4 4 +
+fuck 1 9 8 /
+fuck 0 6 1 (
+    23) Brackets test 4
+fuck 4 7 3 +
+fuck 3 5 10 /
+fuck 2 1 0 /
+fuck 1 4 NaN -
+fuck 0 6 NaN (
+    24) Brackets test 5
+fuck 5 3 0 +
+fuck 4 5 3 +
+fuck 3 9 8 +
+fuck 2 4 17 (
+fuck 1 8 NaN /
+fuck 0 2 NaN +
+    25) Brackets test 6
+fuck 6 6 8 /
+fuck 5 9 0 /
+fuck 4 2 NaN /
+fuck 3 6 NaN -
+fuck 2 4 NaN (
+fuck 1 3 NaN *
+fuck 0 6 NaN *
+    26) Brackets test 7
+fuck 7 7 3 /
+fuck 6 1 2 /
+fuck 5 4 0 +
+fuck 4 8 4 (
+fuck 3 1 NaN +
+fuck 2 6 NaN +
+fuck 1 8 NaN /
+fuck 0 1 NaN -
+    27) Brackets test 8
+fuck 6 8 1 +
+fuck 5 7 9 +
+fuck 4 9 16 *
+fuck 3 8 144 +
+fuck 2 0 152 (
+fuck 1 7 NaN /
+fuck 0 4 NaN *
+    28) Brackets test 9
+fuck 7 7 3 *
+fuck 6 6 21 /
+fuck 5 3 0 +
+fuck 4 2 3 /
+fuck 3 5 0 (
+fuck 2 1 NaN +
+fuck 1 4 NaN +
+fuck 0 5 NaN -
+    29) Brackets test 10
+fuck 6 5 3 /
+fuck 5 3 1 *
+fuck 4 2 3 -
+fuck 3 0 -1 +
+fuck 2 0 -1 (
+fuck 1 1 NaN +
+fuck 0 4 NaN -
+    30) Brackets test 11
+fuck 4 8 3 +
+fuck 3 0 11 /
+fuck 2 6 0 *
+fuck 1 1 0 *
+fuck 0 6 0 (
+    31) Brackets test 12
+fuck 5 6 0 /
+fuck 4 1 NaN +
+fuck 3 3 NaN *
+fuck 2 7 NaN +
+fuck 1 1 NaN +
+fuck 0 7 NaN (
+    32) Brackets test 13
+fuck 6 7 8 +
+fuck 5 7 15 +
+fuck 4 8 22 /
+fuck 3 6 0 (
+fuck 2 9 NaN /
+fuck 1 3 NaN +
+fuck 0 3 NaN *
+    33) Brackets test 14
+fuck 5 1 5 *
+fuck 4 1 5 *
+fuck 3 1 5 -
+fuck 2 8 -4 (
+fuck 1 9 NaN +
+fuck 0 6 NaN -
+    34) Brackets test 15
+fuck 6 1 5 /
+fuck 5 1 0 /
+fuck 4 2 NaN *
+fuck 3 7 NaN (
+fuck 2 5 NaN *
+fuck 1 2 NaN +
+fuck 0 4 NaN /
+    35) Brackets test 16
+fuck 6 4 7 /
+fuck 5 1 0 -
+fuck 4 2 1 +
+fuck 3 5 3 (
+fuck 2 6 NaN +
+fuck 1 7 NaN +
+fuck 0 2 NaN *
+    36) Brackets test 17
+fuck 5 6 1 -
+fuck 4 6 5 -
+fuck 3 9 1 /
+fuck 2 8 9 (
+fuck 1 1 NaN /
+fuck 0 1 NaN *
+    37) Brackets test 18
+fuck 7 6 3 +
+fuck 6 0 9 /
+fuck 5 0 0 *
+fuck 4 1 0 *
+fuck 3 0 0 (
+fuck 2 2 NaN -
+fuck 1 8 NaN /
+fuck 0 1 NaN +
+    38) Brackets test 19
+fuck 5 3 9 +
+fuck 4 9 12 -
+fuck 3 7 -3 +
+fuck 2 4 4 (
+fuck 1 1 NaN *
+fuck 0 2 NaN *
+    39) Brackets test 20
+
+  Hard
+fuck 12 8 4 /
+fuck 11 8 2 /
+fuck 10 1 4 -
+fuck 9 8 -3 /
+fuck 8 2 -2 (
+fuck 7 8 NaN *
+fuck 6 3 NaN /
+fuck 5 7 NaN *
+fuck 4 1 NaN (
+fuck 3 2 NaN *
+fuck 2 9 NaN +
+fuck 1 6 NaN +
+fuck 0 3 NaN (
+    40) Nested brackets test 1
+fuck 15 4 2 -
+fuck 14 7 2 (
+fuck 13 1 NaN -
+fuck 12 9 NaN +
+fuck 11 8 NaN -
+fuck 10 0 NaN +
+fuck 9 8 NaN (
+fuck 8 9 NaN -
+fuck 7 9 NaN *
+fuck 6 2 NaN (
+fuck 5 6 NaN /
+fuck 4 2 NaN *
+fuck 3 6 NaN (
+fuck 2 8 NaN *
+fuck 1 2 NaN /
+fuck 0 3 NaN *
+    41) Nested brackets test 2
+fuck 16 9 3 +
+fuck 15 0 12 +
+fuck 14 7 12 (
+fuck 13 6 NaN *
+fuck 12 7 NaN *
+fuck 11 2 NaN -
+fuck 10 2 NaN /
+fuck 9 2 NaN (
+fuck 8 4 NaN *
+fuck 7 2 NaN *
+fuck 6 2 NaN (
+fuck 5 2 NaN +
+fuck 4 2 NaN *
+fuck 3 1 NaN +
+fuck 2 5 NaN (
+fuck 1 5 NaN *
+fuck 0 7 NaN *
+    42) Nested brackets test 3
+fuck 15 8 1 -
+fuck 14 5 7 *
+fuck 13 1 35 /
+fuck 12 9 0 /
+fuck 11 6 NaN -
+fuck 10 9 NaN (
+fuck 9 4 NaN +
+fuck 8 8 NaN +
+fuck 7 8 NaN +
+fuck 6 1 NaN /
+fuck 5 1 NaN +
+fuck 4 1 NaN (
+fuck 3 8 NaN (
+fuck 2 6 NaN (
+fuck 1 4 NaN *
+fuck 0 9 NaN -
+    43) Nested brackets test 4
+fuck 14 8 5 -
+fuck 13 6 3 -
+fuck 12 8 3 -
+fuck 11 0 5 -
+fuck 10 4 -5 (
+fuck 9 1 NaN *
+fuck 8 8 NaN +
+fuck 7 2 NaN -
+fuck 6 8 NaN /
+fuck 5 7 NaN (
+fuck 4 6 NaN (
+fuck 3 5 NaN +
+fuck 2 3 NaN +
+fuck 1 9 NaN /
+fuck 0 6 NaN (
+    44) Nested brackets test 5
+fuck 10 6 1 /
+fuck 9 3 6 +
+fuck 8 2 9 (
+fuck 7 9 NaN +
+fuck 6 2 NaN /
+fuck 5 6 NaN (
+fuck 4 3 NaN /
+fuck 3 4 NaN +
+fuck 2 5 NaN /
+fuck 1 3 NaN /
+fuck 0 2 NaN (
+    45) Nested brackets test 6
+fuck 10 3 0 /
+fuck 9 9 NaN -
+fuck 8 1 NaN *
+fuck 7 7 NaN /
+fuck 6 2 NaN *
+fuck 5 9 NaN (
+fuck 4 7 NaN -
+fuck 3 6 NaN /
+fuck 2 3 NaN /
+fuck 1 2 NaN (
+fuck 0 2 NaN (
+    46) Nested brackets test 7
+fuck 17 3 1 *
+fuck 16 1 3 *
+fuck 15 1 3 *
+fuck 14 8 3 /
+fuck 13 9 2 -
+fuck 12 9 7 (
+fuck 11 2 NaN (
+fuck 10 9 NaN -
+fuck 9 9 NaN /
+fuck 8 6 NaN +
+fuck 7 7 NaN (
+fuck 6 9 NaN /
+fuck 5 9 NaN -
+fuck 4 2 NaN /
+fuck 3 6 NaN (
+fuck 2 5 NaN +
+fuck 1 7 NaN +
+fuck 0 4 NaN (
+    47) Nested brackets test 8
+fuck 27 2 5 /
+fuck 26 2 0 /
+fuck 25 4 NaN /
+fuck 24 7 NaN *
+fuck 23 5 NaN /
+fuck 22 1 NaN (
+fuck 21 9 NaN *
+fuck 20 0 NaN -
+fuck 19 9 NaN /
+fuck 18 7 NaN (
+fuck 17 3 NaN *
+fuck 16 8 NaN /
+fuck 15 9 NaN /
+fuck 14 0 NaN (
+fuck 13 5 NaN +
+fuck 12 1 NaN /
+fuck 11 7 NaN /
+fuck 10 7 NaN +
+fuck 9 8 NaN +
+fuck 8 1 NaN (
+fuck 7 5 NaN (
+fuck 6 2 NaN /
+fuck 5 2 NaN /
+fuck 4 0 NaN -
+fuck 3 3 NaN /
+fuck 2 2 NaN (
+fuck 1 1 NaN +
+fuck 0 5 NaN +
+    48) Nested brackets test 9
+fuck 10 4 5 *
+fuck 9 9 20 -
+fuck 8 8 -11 -
+fuck 7 9 19 +
+fuck 6 5 28 *
+fuck 5 9 140 (
+fuck 4 4 NaN *
+fuck 3 7 NaN -
+fuck 2 7 NaN -
+fuck 1 1 NaN (
+fuck 0 5 NaN (
+    49) Nested brackets test 10
+fuck 19 9 2 /
+fuck 18 1 4 /
+fuck 17 9 0 +
+fuck 16 7 9 *
+fuck 15 8 63 (
+fuck 14 9 NaN -
+fuck 13 9 NaN /
+fuck 12 8 NaN /
+fuck 11 1 NaN (
+fuck 10 1 NaN +
+fuck 9 7 NaN /
+fuck 8 7 NaN /
+fuck 7 0 NaN (
+fuck 6 0 NaN +
+fuck 5 1 NaN /
+fuck 4 5 NaN (
+fuck 3 8 NaN (
+fuck 2 3 NaN /
+fuck 1 1 NaN +
+fuck 0 2 NaN -
+    50) Nested brackets test 11
+fuck 22 1 5 +
+fuck 21 6 6 /
+fuck 20 5 1 *
+fuck 19 9 5 (
+fuck 18 0 NaN *
+fuck 17 4 NaN /
+fuck 16 1 NaN *
+fuck 15 8 NaN (
+fuck 14 2 NaN /
+fuck 13 7 NaN *
+fuck 12 1 NaN -
+fuck 11 4 NaN +
+fuck 10 6 NaN (
+fuck 9 9 NaN /
+fuck 8 9 NaN /
+fuck 7 2 NaN (
+fuck 6 8 NaN *
+fuck 5 8 NaN *
+fuck 4 2 NaN *
+fuck 3 1 NaN (
+fuck 2 9 NaN (
+fuck 1 3 NaN +
+fuck 0 7 NaN -
+    51) Nested brackets test 12
+fuck 26 7 6 +
+fuck 25 2 13 /
+fuck 24 6 0 *
+fuck 23 7 0 *
+fuck 22 2 0 -
+fuck 21 2 2 *
+fuck 20 2 4 *
+fuck 19 9 8 -
+fuck 18 4 1 -
+fuck 17 4 3 (
+fuck 16 8 NaN /
+fuck 15 3 NaN +
+fuck 14 1 NaN (
+fuck 13 7 NaN -
+fuck 12 5 NaN -
+fuck 11 9 NaN (
+fuck 10 5 NaN (
+fuck 9 2 NaN *
+fuck 8 9 NaN /
+fuck 7 3 NaN *
+fuck 6 7 NaN (
+fuck 5 7 NaN /
+fuck 4 2 NaN +
+fuck 3 1 NaN (
+fuck 2 8 NaN /
+fuck 1 1 NaN *
+fuck 0 7 NaN (
+    52) Nested brackets test 13
+fuck 12 9 7 /
+fuck 11 4 1 +
+fuck 10 1 5 /
+fuck 9 8 0 +
+fuck 8 2 8 /
+fuck 7 5 0 (
+fuck 6 1 NaN +
+fuck 5 9 NaN -
+fuck 4 3 NaN +
+fuck 3 2 NaN +
+fuck 2 1 NaN -
+fuck 1 7 NaN (
+fuck 0 6 NaN (
+    53) Nested brackets test 14
+fuck 11 6 0 *
+fuck 10 0 0 -
+fuck 9 2 0 *
+fuck 8 7 0 +
+fuck 7 3 7 *
+fuck 6 9 21 +
+fuck 5 7 30 (
+fuck 4 2 NaN (
+fuck 3 9 NaN (
+fuck 2 3 NaN *
+fuck 1 8 NaN -
+fuck 0 1 NaN +
+    54) Nested brackets test 15
+fuck 11 9 2 *
+fuck 10 5 18 /
+fuck 9 4 0 +
+fuck 8 3 4 /
+fuck 7 9 0 /
+fuck 6 6 NaN -
+fuck 5 7 NaN (
+fuck 4 2 NaN (
+fuck 3 9 NaN (
+fuck 2 4 NaN *
+fuck 1 6 NaN +
+fuck 0 6 NaN -
+    55) Nested brackets test 16
+fuck 11 6 2 -
+fuck 10 0 4 -
+fuck 9 0 -4 -
+fuck 8 6 4 +
+fuck 7 9 10 (
+fuck 6 2 NaN +
+fuck 5 6 NaN -
+fuck 4 9 NaN (
+fuck 3 6 NaN +
+fuck 2 1 NaN /
+fuck 1 4 NaN +
+fuck 0 1 NaN (
+    56) Nested brackets test 17
+fuck 17 9 7 /
+fuck 16 2 1 -
+fuck 15 0 1 (
+fuck 14 7 NaN -
+fuck 13 4 NaN -
+fuck 12 9 NaN +
+fuck 11 0 NaN (
+fuck 10 5 NaN -
+fuck 9 9 NaN -
+fuck 8 1 NaN -
+fuck 7 2 NaN (
+fuck 6 2 NaN *
+fuck 5 2 NaN *
+fuck 4 9 NaN *
+fuck 3 6 NaN (
+fuck 2 2 NaN -
+fuck 1 6 NaN +
+fuck 0 1 NaN *
+    57) Nested brackets test 18
+fuck 17 6 9 /
+fuck 16 2 0 *
+fuck 15 1 0 (
+fuck 14 9 NaN +
+fuck 13 5 NaN /
+fuck 12 4 NaN /
+fuck 11 7 NaN -
+fuck 10 4 NaN (
+fuck 9 0 NaN *
+fuck 8 8 NaN /
+fuck 7 2 NaN *
+fuck 6 2 NaN (
+fuck 5 9 NaN -
+fuck 4 1 NaN +
+fuck 3 9 NaN (
+fuck 2 1 NaN /
+fuck 1 1 NaN +
+fuck 0 5 NaN /
+    58) Nested brackets test 19
+fuck 26 8 1 -
+fuck 25 9 7 *
+fuck 24 2 63 /
+fuck 23 7 0 *
+fuck 22 1 0 -
+fuck 21 7 1 (
+fuck 20 1 NaN *
+fuck 19 9 NaN *
+fuck 18 8 NaN (
+fuck 17 2 NaN *
+fuck 16 8 NaN *
+fuck 15 6 NaN (
+fuck 14 5 NaN /
+fuck 13 9 NaN /
+fuck 12 9 NaN /
+fuck 11 8 NaN (
+fuck 10 1 NaN (
+fuck 9 5 NaN /
+fuck 8 0 NaN +
+fuck 7 8 NaN (
+fuck 6 2 NaN *
+fuck 5 8 NaN *
+fuck 4 0 NaN +
+fuck 3 2 NaN (
+fuck 2 2 NaN /
+fuck 1 3 NaN *
+fuck 0 7 NaN -
+    59) Nested brackets test 20
+fuck 14 7 3 +
+fuck 13 8 10 -
+fuck 12 5 -2 *
+fuck 11 1 -10 (
+fuck 10 5 NaN -
+fuck 9 8 NaN /
+fuck 8 7 NaN (
+fuck 7 0 NaN -
+fuck 6 5 NaN /
+fuck 5 7 NaN *
+fuck 4 6 NaN /
+fuck 3 0 NaN (
+fuck 2 1 NaN (
+fuck 1 4 NaN /
+fuck 0 3 NaN *
+    60) Nested brackets test 21
+fuck 20 1 7 /
+fuck 19 1 0 /
+fuck 18 7 NaN +
+fuck 17 2 NaN (
+fuck 16 5 NaN *
+fuck 15 9 NaN -
+fuck 14 5 NaN -
+fuck 13 6 NaN (
+fuck 12 1 NaN /
+fuck 11 7 NaN +
+fuck 10 6 NaN +
+fuck 9 6 NaN (
+fuck 8 3 NaN /
+fuck 7 2 NaN +
+fuck 6 4 NaN +
+fuck 5 9 NaN *
+fuck 4 5 NaN (
+fuck 3 4 NaN +
+fuck 2 1 NaN +
+fuck 1 6 NaN /
+fuck 0 5 NaN (
+    61) Nested brackets test 22
+fuck 11 8 5 /
+fuck 10 3 1 *
+fuck 9 6 3 *
+fuck 8 4 18 (
+fuck 7 5 NaN +
+fuck 6 8 NaN /
+fuck 5 3 NaN -
+fuck 4 5 NaN (
+fuck 3 6 NaN (
+fuck 2 0 NaN -
+fuck 1 0 NaN *
+fuck 0 1 NaN *
+    62) Nested brackets test 23
+fuck 10 2 6 +
+fuck 9 1 8 /
+fuck 8 4 0 /
+fuck 7 2 NaN +
+fuck 6 4 NaN (
+fuck 5 5 NaN (
+fuck 4 3 NaN -
+fuck 3 7 NaN +
+fuck 2 6 NaN /
+fuck 1 4 NaN /
+fuck 0 0 NaN (
+    63) Nested brackets test 24
+fuck 26 9 9 /
+fuck 25 4 1 -
+fuck 24 3 3 (
+fuck 23 1 NaN -
+fuck 22 0 NaN -
+fuck 21 4 NaN -
+fuck 20 7 NaN /
+fuck 19 7 NaN *
+fuck 18 4 NaN (
+fuck 17 8 NaN /
+fuck 16 8 NaN -
+fuck 15 4 NaN (
+fuck 14 2 NaN +
+fuck 13 4 NaN +
+fuck 12 0 NaN /
+fuck 11 1 NaN *
+fuck 10 2 NaN /
+fuck 9 5 NaN (
+fuck 8 8 NaN *
+fuck 7 8 NaN *
+fuck 6 7 NaN +
+fuck 5 7 NaN (
+fuck 4 2 NaN (
+fuck 3 6 NaN -
+fuck 2 5 NaN +
+fuck 1 5 NaN +
+fuck 0 9 NaN (
+    64) Nested brackets test 25
+fuck 12 9 0 *
+fuck 11 9 0 (
+fuck 10 7 NaN *
+fuck 9 5 NaN *
+fuck 8 8 NaN /
+fuck 7 0 NaN (
+fuck 6 3 NaN /
+fuck 5 8 NaN -
+fuck 4 1 NaN -
+fuck 3 4 NaN (
+fuck 2 5 NaN +
+fuck 1 3 NaN -
+fuck 0 2 NaN *
+    65) Nested brackets test 26
+fuck 17 6 3 *
+fuck 16 6 18 /
+fuck 15 1 0 (
+fuck 14 0 NaN /
+fuck 13 9 NaN -
+fuck 12 9 NaN -
+fuck 11 2 NaN (
+fuck 10 6 NaN (
+fuck 9 8 NaN -
+fuck 8 1 NaN -
+fuck 7 9 NaN *
+fuck 6 5 NaN (
+fuck 5 0 NaN +
+fuck 4 2 NaN +
+fuck 3 4 NaN *
+fuck 2 8 NaN (
+fuck 1 0 NaN /
+fuck 0 6 NaN -
+    66) Nested brackets test 27
+fuck 19 9 4 *
+fuck 18 0 36 (
+fuck 17 2 NaN /
+fuck 16 3 NaN *
+fuck 15 5 NaN +
+fuck 14 1 NaN +
+fuck 13 7 NaN (
+fuck 12 0 NaN +
+fuck 11 4 NaN /
+fuck 10 9 NaN +
+fuck 9 9 NaN /
+fuck 8 1 NaN -
+fuck 7 1 NaN (
+fuck 6 8 NaN /
+fuck 5 9 NaN *
+fuck 4 0 NaN (
+fuck 3 3 NaN (
+fuck 2 8 NaN /
+fuck 1 2 NaN +
+fuck 0 1 NaN *
+    67) Nested brackets test 28
+fuck 16 5 9 +
+fuck 15 4 14 *
+fuck 14 1 56 -
+fuck 13 4 -55 +
+fuck 12 5 -51 *
+fuck 11 6 -255 -
+fuck 10 7 261 (
+fuck 9 8 NaN /
+fuck 8 1 NaN +
+fuck 7 3 NaN (
+fuck 6 9 NaN /
+fuck 5 5 NaN -
+fuck 4 4 NaN (
+fuck 3 0 NaN -
+fuck 2 8 NaN -
+fuck 1 0 NaN /
+fuck 0 5 NaN (
+    68) Nested brackets test 29
+fuck 13 5 5 /
+fuck 12 9 1 *
+fuck 11 3 9 +
+fuck 10 5 12 -
+fuck 9 3 -7 /
+fuck 8 4 0 (
+fuck 7 6 NaN *
+fuck 6 6 NaN /
+fuck 5 2 NaN (
+fuck 4 7 NaN /
+fuck 3 1 NaN *
+fuck 2 9 NaN (
+fuck 1 3 NaN +
+fuck 0 9 NaN -
+    69) Nested brackets test 30
+
+
+  4 passing (105ms)
+  69 failing
+
+  1) Easy
+       Test division by zero:
+     AssertionError: expected [Function] to throw an error
+      at Context.<anonymous> (test.js:31:58)
+      at processImmediate (internal/timers.js:456:21)
+
+  2) Easy
+       Mixed base test 1:
+
+      AssertionError: expected 0 to equal 1916.069
+      + expected - actual
+
+      -0
+      +1916.069
+      
+      at Context.<anonymous> (test.js:38:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  3) Easy
+       Mixed base test 2:
+
+      AssertionError: expected NaN to equal 117.7879
+      + expected - actual
+
+      -NaN
+      +117.7879
+      
+      at Context.<anonymous> (test.js:44:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  4) Easy
+       Mixed base test 3:
+
+      AssertionError: expected 114 to equal 10736632
+      + expected - actual
+
+      -114
+      +10736632
+      
+      at Context.<anonymous> (test.js:50:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  5) Easy
+       Mixed base test 4:
+
+      AssertionError: expected 2 to equal -50.1818
+      + expected - actual
+
+      -2
+      +-50.1818
+      
+      at Context.<anonymous> (test.js:56:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  6) Easy
+       Mixed base test 5:
+
+      AssertionError: expected 8 to equal -87
+      + expected - actual
+
+      -8
+      +-87
+      
+      at Context.<anonymous> (test.js:62:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  7) Easy
+       Mixed base test 6:
+
+      AssertionError: expected -35 to equal 3151
+      + expected - actual
+
+      --35
+      +3151
+      
+      at Context.<anonymous> (test.js:68:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  8) Easy
+       Mixed base test 7:
+
+      AssertionError: expected 0 to equal 231.5
+      + expected - actual
+
+      -0
+      +231.5
+      
+      at Context.<anonymous> (test.js:74:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  9) Easy
+       Mixed base test 8:
+
+      AssertionError: expected 8 to equal -41
+      + expected - actual
+
+      -8
+      +-41
+      
+      at Context.<anonymous> (test.js:80:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  10) Easy
+       Mixed base test 9:
+
+      AssertionError: expected NaN to equal 17.8848
+      + expected - actual
+
+      -NaN
+      +17.8848
+      
+      at Context.<anonymous> (test.js:86:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  11) Easy
+       Mixed base test 10:
+
+      AssertionError: expected 10 to equal 5
+      + expected - actual
+
+      -10
+      +5
+      
+      at Context.<anonymous> (test.js:92:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  12) Easy
+       Mixed base test 11:
+
+      AssertionError: expected 7 to equal -24.4912
+      + expected - actual
+
+      -7
+      +-24.4912
+      
+      at Context.<anonymous> (test.js:98:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  13) Easy
+       Mixed base test 12:
+
+      AssertionError: expected 125 to equal 33610
+      + expected - actual
+
+      -125
+      +33610
+      
+      at Context.<anonymous> (test.js:104:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  14) Easy
+       Mixed base test 13:
+
+      AssertionError: expected -40 to equal -32
+      + expected - actual
+
+      --40
+      +-32
+      
+      at Context.<anonymous> (test.js:110:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  15) Easy
+       Mixed base test 14:
+
+      AssertionError: expected 1 to equal -52.1619
+      + expected - actual
+
+      -1
+      +-52.1619
+      
+      at Context.<anonymous> (test.js:116:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  16) Easy
+       Mixed base test 15:
+
+      AssertionError: expected 0 to equal 145.9512
+      + expected - actual
+
+      -0
+      +145.9512
+      
+      at Context.<anonymous> (test.js:122:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  17) Medium
+       Brackets must be paired:
+     AssertionError: expected [Function] to throw an error
+      at Context.<anonymous> (test.js:129:58)
+      at processImmediate (internal/timers.js:456:21)
+
+  18) Medium
+       Brackets must be paired:
+     AssertionError: expected [Function] to throw an error
+      at Context.<anonymous> (test.js:134:58)
+      at processImmediate (internal/timers.js:456:21)
+
+  19) Medium
+       Brackets must be paired:
+     AssertionError: expected [Function] to throw an error
+      at Context.<anonymous> (test.js:139:58)
+      at processImmediate (internal/timers.js:456:21)
+
+  20) Medium
+       Brackets test 1:
+
+      AssertionError: expected NaN to equal -821.5556
+      + expected - actual
+
+      -NaN
+      +-821.5556
+      
+      at Context.<anonymous> (test.js:145:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  21) Medium
+       Brackets test 2:
+
+      AssertionError: expected NaN to equal 431461.24
+      + expected - actual
+
+      -NaN
+      +431461.24
+      
+      at Context.<anonymous> (test.js:151:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  22) Medium
+       Brackets test 3:
+
+      AssertionError: expected NaN to equal 98.671
+      + expected - actual
+
+      -NaN
+      +98.671
+      
+      at Context.<anonymous> (test.js:157:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  23) Medium
+       Brackets test 4:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:163:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  24) Medium
+       Brackets test 5:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:169:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  25) Medium
+       Brackets test 6:
+
+      AssertionError: expected NaN to equal 121.0022
+      + expected - actual
+
+      -NaN
+      +121.0022
+      
+      at Context.<anonymous> (test.js:175:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  26) Medium
+       Brackets test 7:
+
+      AssertionError: expected NaN to equal 428.2112
+      + expected - actual
+
+      -NaN
+      +428.2112
+      
+      at Context.<anonymous> (test.js:181:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  27) Medium
+       Brackets test 8:
+
+      AssertionError: expected NaN to equal 167.2906
+      + expected - actual
+
+      -NaN
+      +167.2906
+      
+      at Context.<anonymous> (test.js:187:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  28) Medium
+       Brackets test 9:
+
+      AssertionError: expected NaN to equal 81.2456
+      + expected - actual
+
+      -NaN
+      +81.2456
+      
+      at Context.<anonymous> (test.js:193:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  29) Medium
+       Brackets test 10:
+
+      AssertionError: expected NaN to equal 25.8977
+      + expected - actual
+
+      -NaN
+      +25.8977
+      
+      at Context.<anonymous> (test.js:199:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  30) Medium
+       Brackets test 11:
+
+      AssertionError: expected NaN to equal -15.6481
+      + expected - actual
+
+      -NaN
+      +-15.6481
+      
+      at Context.<anonymous> (test.js:205:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  31) Medium
+       Brackets test 12:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:211:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  32) Medium
+       Brackets test 13:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:217:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  33) Medium
+       Brackets test 14:
+
+      AssertionError: expected NaN to equal 7104.2369
+      + expected - actual
+
+      -NaN
+      +7104.2369
+      
+      at Context.<anonymous> (test.js:223:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  34) Medium
+       Brackets test 15:
+
+      AssertionError: expected NaN to equal -8794.3636
+      + expected - actual
+
+      -NaN
+      +-8794.3636
+      
+      at Context.<anonymous> (test.js:229:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  35) Medium
+       Brackets test 16:
+
+      AssertionError: expected NaN to equal 3.7109
+      + expected - actual
+
+      -NaN
+      +3.7109
+      
+      at Context.<anonymous> (test.js:235:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  36) Medium
+       Brackets test 17:
+
+      AssertionError: expected NaN to equal 6872
+      + expected - actual
+
+      -NaN
+      +6872
+      
+      at Context.<anonymous> (test.js:241:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  37) Medium
+       Brackets test 18:
+
+      AssertionError: expected NaN to equal -65.7939
+      + expected - actual
+
+      -NaN
+      +-65.7939
+      
+      at Context.<anonymous> (test.js:247:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  38) Medium
+       Brackets test 19:
+
+      AssertionError: expected NaN to equal -89367.7363
+      + expected - actual
+
+      -NaN
+      +-89367.7363
+      
+      at Context.<anonymous> (test.js:253:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  39) Medium
+       Brackets test 20:
+
+      AssertionError: expected NaN to equal -3330353
+      + expected - actual
+
+      -NaN
+      +-3330353
+      
+      at Context.<anonymous> (test.js:259:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  40) Hard
+       Nested brackets test 1:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:267:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  41) Hard
+       Nested brackets test 2:
+
+      AssertionError: expected NaN to equal -20871.247
+      + expected - actual
+
+      -NaN
+      +-20871.247
+      
+      at Context.<anonymous> (test.js:273:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  42) Hard
+       Nested brackets test 3:
+
+      AssertionError: expected NaN to equal -3703376512014.667
+      + expected - actual
+
+      -NaN
+      +-3703376512014.667
+      
+      at Context.<anonymous> (test.js:279:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  43) Hard
+       Nested brackets test 4:
+
+      AssertionError: expected NaN to equal 94013.7072
+      + expected - actual
+
+      -NaN
+      +94013.7072
+      
+      at Context.<anonymous> (test.js:285:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  44) Hard
+       Nested brackets test 5:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:291:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  45) Hard
+       Nested brackets test 6:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:297:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  46) Hard
+       Nested brackets test 7:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:303:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  47) Hard
+       Nested brackets test 8:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:309:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  48) Hard
+       Nested brackets test 9:
+
+      AssertionError: expected NaN to equal 84.0012
+      + expected - actual
+
+      -NaN
+      +84.0012
+      
+      at Context.<anonymous> (test.js:315:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  49) Hard
+       Nested brackets test 10:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:321:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  50) Hard
+       Nested brackets test 11:
+
+      AssertionError: expected NaN to equal -81.0516
+      + expected - actual
+
+      -NaN
+      +-81.0516
+      
+      at Context.<anonymous> (test.js:327:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  51) Hard
+       Nested brackets test 12:
+
+      AssertionError: expected NaN to equal 136201.6403
+      + expected - actual
+
+      -NaN
+      +136201.6403
+      
+      at Context.<anonymous> (test.js:333:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  52) Hard
+       Nested brackets test 13:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:339:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  53) Hard
+       Nested brackets test 14:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:345:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  54) Hard
+       Nested brackets test 15:
+
+      AssertionError: expected NaN to equal -331754184
+      + expected - actual
+
+      -NaN
+      +-331754184
+      
+      at Context.<anonymous> (test.js:351:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  55) Hard
+       Nested brackets test 16:
+
+      AssertionError: expected NaN to equal 59.2945
+      + expected - actual
+
+      -NaN
+      +59.2945
+      
+      at Context.<anonymous> (test.js:357:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  56) Hard
+       Nested brackets test 17:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:363:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  57) Hard
+       Nested brackets test 18:
+
+      AssertionError: expected NaN to equal 603787.7448
+      + expected - actual
+
+      -NaN
+      +603787.7448
+      
+      at Context.<anonymous> (test.js:369:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  58) Hard
+       Nested brackets test 19:
+
+      AssertionError: expected NaN to equal 1.2541
+      + expected - actual
+
+      -NaN
+      +1.2541
+      
+      at Context.<anonymous> (test.js:375:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  59) Hard
+       Nested brackets test 20:
+
+      AssertionError: expected NaN to equal 23.9822
+      + expected - actual
+
+      -NaN
+      +23.9822
+      
+      at Context.<anonymous> (test.js:381:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  60) Hard
+       Nested brackets test 21:
+
+      AssertionError: expected NaN to equal 73.0028
+      + expected - actual
+
+      -NaN
+      +73.0028
+      
+      at Context.<anonymous> (test.js:387:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  61) Hard
+       Nested brackets test 22:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:393:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  62) Hard
+       Nested brackets test 23:
+
+      AssertionError: expected NaN to equal 12313.572
+      + expected - actual
+
+      -NaN
+      +12313.572
+      
+      at Context.<anonymous> (test.js:399:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  63) Hard
+       Nested brackets test 24:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:405:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  64) Hard
+       Nested brackets test 25:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:411:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  65) Hard
+       Nested brackets test 26:
+
+      AssertionError: expected NaN to equal 6420.0012
+      + expected - actual
+
+      -NaN
+      +6420.0012
+      
+      at Context.<anonymous> (test.js:417:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  66) Hard
+       Nested brackets test 27:
+
+      AssertionError: expected NaN to equal 11.8573
+      + expected - actual
+
+      -NaN
+      +11.8573
+      
+      at Context.<anonymous> (test.js:423:66)
+      at processImmediate (internal/timers.js:456:21)
+
+  67) Hard
+       Nested brackets test 28:
+     AssertionError: expected [Function] to throw an error
+      at Context.<anonymous> (test.js:428:58)
+      at processImmediate (internal/timers.js:456:21)
+
+  68) Hard
+       Nested brackets test 29:
+     TypeError: Cannot read property 'toFixed' of undefined
+      at Context.<anonymous> (test.js:434:49)
+      at processImmediate (internal/timers.js:456:21)
+
+  69) Hard
+       Nested brackets test 30:
+
+      AssertionError: expected NaN to equal 72.6846
+      + expected - actual
+
+      -NaN
+      +72.6846
+      
+      at Context.<anonymous> (test.js:440:66)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
