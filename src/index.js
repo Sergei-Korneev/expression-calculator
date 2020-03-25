@@ -33,12 +33,8 @@ function applyOp( a,  b,  op){
         
       }
     expr=expr.replace(/ /g,"").replace(/\+/g,' + ').replace(/\-/g,' - ').replace(/\*/g,' * ').replace(/\//g,' / ');
-  
-   // expr=expr.replace(/ /g,"");
- 
-      
-     // expr=expr.split("").filter(e => e != "").join(" ");
-      console.log("Start "+expr);
+
+      //console.log("Start "+expr);
          // stack to store integer values. 
          var values=[]; 
         
@@ -46,7 +42,7 @@ function applyOp( a,  b,  op){
          var ops=[]; 
         
       for(let i = 0; i < expr.length; i++){ 
-        console.log("CURRENT "+expr[i]);
+        //console.log("CURRENT "+expr[i]+" i: " + i  );
      
           // Current token is a whitespace, 
           // skip it. 
@@ -72,17 +68,17 @@ function applyOp( a,  b,  op){
                   val = (val*10) + (parseFloat(expr[i],10)); 
                   i++; 
               } 
-                
+                i--;
               values.push(val); 
-              console.log("values "+values);
+              //console.log("values "+values);
           } 
             
           // Closing brace encountered, solve  
           // entire brace. 
          
           else if(expr[i] == ')') 
-          {   console.log("values in brackets "+values);
-              while(!(Array.isArray(ops) && ops.length) && ops.slice(-1)[0] != '(') 
+          {   
+              while(ops.length >  0 && ops.slice(-1)[0] != '(') 
               { 
                    val2 = parseFloat(values.slice(-1)[0]); 
                   values.pop(); 
@@ -92,15 +88,15 @@ function applyOp( a,  b,  op){
                     
                    op = ops.slice(-1)[0]; 
                   ops.pop(); 
-                    
+                  //console.log("values in brackets1 "+" val 1 "+val1+" val2 "+val2+" op " +op+" values "+values);
                   values.push(applyOp(val1, val2, op)); 
-                  console.log("values in brackets "+values);
+                  //console.log("values in brackets "+values);
 
               } 
              
               // pop opening brace. 
-              if(!(Array.isArray(ops) && ops.length!=0)) {
-                 ops.pop(); }
+             // if(!(Array.isArray(ops) && ops.length!=0)) {
+                 ops.pop();// }
                  
           } 
        
@@ -111,7 +107,7 @@ function applyOp( a,  b,  op){
               // precedence to current token, which 
               // is an operator. Apply operator on top  
               // of 'ops' to top two elements in values stack.
-              console.log("ops 1111 "+ops);
+              //console.log("ops 1111 "+ops);
               while((Array.isArray(ops) && ops.length )&& precedence(ops.slice(-1)[0]) >= precedence(expr[i]))
               { 
                                     
@@ -125,18 +121,19 @@ function applyOp( a,  b,  op){
                   ops.pop(); 
                     
                   values.push(applyOp(val1, val2, op)); 
-                  console.log("values apply "+values);
+                  ////console.log("fuck "+ops.length+" "+"values: "+values+" val1 "+val1+ " val2 "+val2+" op "+op+" ops "+ops); 
               } 
                 
               // Push current token to 'ops'. 
               ops.push(expr[i]); 
+              
           } 
       } 
-      console.log("values apply "+values+" ops "+ops);
+     
       // Entire expression has been parsed at this 
       // point, apply remaining ops to remaining 
       // values. 
-      while(ops.length>0){
+      while(ops.length!=0){
         
           val2 = parseFloat(values.slice(-1)[0]); 
           values.pop(); 
@@ -145,7 +142,7 @@ function applyOp( a,  b,  op){
           values.pop(); 
                     
          op = ops.slice(-1)[0]; 
-         console.log("fuck "+ops.length+" "+"values: "+values+" val1 "+val1+ " val2 "+val2+" op "+op); 
+         ////console.log("fuck "+ops.length+" "+"values: "+values+" val1 "+val1+ " val2 "+val2+" op "+op); 
           ops.pop(); 
                
           values.push(applyOp(val1, val2, op)); 
